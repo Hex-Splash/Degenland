@@ -1,0 +1,30 @@
+.code-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.code-title {
+    width: 100%;
+    color: var(--gray);
+}
+
+.code-button {
+    display: flex;
+    width: 100% !important;
+    gap: 32px;
+}
+
+@media screen and (max-width: 560px) {
+    .code-title {
+        width: fit-content;
+        padding: 8px 16px;
+    }
+
+    .code-button {
+        width: fit-content !important;
+        padding: 4px 48px;
+    }
+}

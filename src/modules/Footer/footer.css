@@ -1,0 +1,157 @@
+.footer {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.path-bar {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 12px;
+    right: 0;
+    top: -52px;
+    background: var(--white-30);
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: var(--white-30);
+}
+
+.footer-img-text-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    background: var(--white-25);
+}
+
+.footer-img {
+    width: 64px;
+    height: 64px;
+}
+
+.footer-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.progress-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.progress-buttons-block {
+    display: flex;
+    height: 100%;
+    width: 238px;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 2px;
+    border-top: 2px solid var(--white-15);
+    border-right: 2px solid var(--white-50);
+    border-left: 2px solid var(--white-15);
+    border-bottom: 2px solid var(--white-50);
+    box-shadow: 2px 2px 0px var(--dark) inset, 2px 2px 0px var(--white);
+}
+
+.progress-bar-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-button {
+    height: 48px !important;
+    width: 60px !important;
+}
+
+.widthpbm {
+    width: 385px;
+}
+
+.widthpbv {
+    width: 246px;
+}
+
+.strelochka {
+    position: absolute;
+    bottom: -30px;
+    right: 50%;
+}
+
+@media screen and (max-width: 1240px) {
+    .path-bar {
+        padding: 8px;
+        top: -40px;
+    }
+
+    .widthpbm {
+        width: 196px;
+    }
+
+    .widthpbv {
+        width: 192px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-img-text-block {
+        width: 100%;
+    }
+
+    .footer-button {
+        height: 28px !important;
+        width: 34px !important;
+    }
+
+    .progress-buttons-block {
+        width: 116px;
+        gap: 4px;
+    }
+    .footer-img-block {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-img-text-block {
+        gap: 8px;
+    }
+
+    .path-bar {
+        display: none;
+        overflow: hidden;
+    }
+
+    .progress-bar-block {
+        display: none;
+        overflow: hidden;
+    }
+}

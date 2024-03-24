@@ -1,0 +1,90 @@
+.codeinput-container {
+    display: flex;
+    gap: 16px;
+}
+
+.codeinput-slash {
+    position: relative;
+}
+
+.codeinput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--gray);
+    text-decoration: underline var(--green);
+    background: var(--white-30);
+    caret-color: transparent;
+    outline: none;
+}
+
+.codeinput:focus {
+    text-decoration: underline var(--gray);
+}
+
+.codeinput:active {
+    text-decoration: underline var(--gray);
+}
+
+.codeinput:focus + .codeinput-slash::after {
+    content: "|";
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--gray);
+    animation: codeinput-line-anim infinite 1.2s linear;
+}
+
+.codeinput::placeholder {
+    text-decoration: underline var(--light-gray);
+}
+
+.codeinput::selection {
+    background: transparent;
+}
+.codeinput::-moz-selection {
+    background: transparent;
+}
+
+@keyframes codeinput-line-anim {
+    0% {
+        opacity: 100%;
+    }
+    49.9% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .codeinput-container {
+        display: flex;
+        gap: 8px;
+    }
+
+    .codeinput {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .codeinput:focus + .codeinput-slash::after {
+        right: 16px;
+        top: 6px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

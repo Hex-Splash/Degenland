@@ -1,0 +1,85 @@
+.head-headbar-title-block {
+    display: flex;
+    gap: 6px;
+}
+
+.head-headbar-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.head-headbar-title {
+    font-size: 22px;
+    color: var(--white);
+}
+
+.head-headbar-buttons {
+    display: flex;
+    gap: 2px;
+}
+
+.head-headbar-button {
+    display: flex;
+    align-items: flex-end;
+    padding: 4px !important;
+    height: 28px !important;
+    width: 32px !important;
+}
+
+.head-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px;
+    background: var(--white-30);
+}
+
+.head-link-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.head-button {
+    padding: 4px;
+}
+
+.head-button-connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--gray);
+    padding: 0px 16px;
+    border: dotted var(--gray);
+    gap: 16px;
+}
+
+.head-headbar-buttons-mobile {
+    display: none;
+    overflow: hidden;
+}
+
+.home-key-image {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .head-button {
+        display: none;
+        overflow: hidden;
+    }
+
+    .head-headbar-buttons {
+        display: none;
+        overflow: hidden;
+    }
+
+    .head-headbar-buttons-mobile {
+        display: block;
+        overflow: visible;
+    }
+}

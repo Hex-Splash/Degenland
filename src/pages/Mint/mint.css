@@ -1,0 +1,94 @@
+.mint-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 994px;
+    gap: 32px;
+}
+
+.mint-button-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 16px;
+}
+
+.mint-image-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    box-shadow: 16px 16px 0px rgba(10, 10, 10, 0.8);
+}
+
+.mint-image {
+    width: 320px;
+    height: 220px;
+}
+
+.mint-image-text {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.mint-button {
+    display: flex;
+    width: 100% !important;
+    gap: 32px;
+}
+
+.mint-text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--gray);
+}
+
+@media screen and (max-width: 1200px) {
+    .mint-content {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mint-content {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .mint-content {
+        max-width: 440px;
+    }
+
+    .mint-button {
+        font-size: 16px !important;
+        width: 240px !important;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .mint-image-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mint-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .mint-image {
+        width: 170px;
+        height: 120px;
+    }
+}

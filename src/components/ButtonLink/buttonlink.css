@@ -1,0 +1,22 @@
+.link {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.link::first-letter {
+    color: var(--red);
+}
+
+@media screen and (max-width: 1240px) {
+    .link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        font-size: 16px;
+    }
+}
